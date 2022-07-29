@@ -22,7 +22,7 @@ const Search: FC<SearchProps> = ({ title }) => {
       return dispatch(setAlert("City is required!"));
     }
     dispatch(setLoading());
-    dispatch(getWeather(city));
+    dispatch<any>(getWeather(city));
     setCity("");
   };
 
